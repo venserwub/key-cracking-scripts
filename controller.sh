@@ -3,7 +3,7 @@
 
 javac CipherExample.java
 #Need to adjust it to pull the key from params if we generate a random one
-java CipherExample $RANDKEY
+java CipherExample $RANDKEY lorem.txt
 #gets lorem ipsum and encrypts then decrypts
 
 
