@@ -10,7 +10,7 @@ import javax.crypto.SecretKey;
 import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.DESKeySpec;
 
-public class crypto {
+public class Crypto {
 	public static void main(String[] args) {
 		Byte[] key = args[0];
 		String ptext = args[1];
