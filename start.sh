@@ -1,14 +1,14 @@
 #! /bin/bash
 
-# generate a random key
-#Use env var?
-#RANDKEY=...
-
 # create lorem ispum
-echo "Hello World" > lorem.txt
+export CTEXT="Lorem ipsum"
+echo $CTEXT > lorem.ptxt
 
-#create file for encrpted version
-touch encrypted.txt
+#encrypt lorem ipsum
+javac Encrypt.java
+java Encrypt
+
+export PTEXT="${cat lorem.ctxt}"
 
 # pass execution to controller
 ./controller.sh
