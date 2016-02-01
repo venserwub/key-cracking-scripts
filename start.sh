@@ -2,10 +2,11 @@
 
 # generate a random key
 #Use env var?
-#RANDKEY=...
+export RANDKEY=
+export CTEXT="Lorem ipsum"
 
 # create lorem ispum
-echo "Hello World" > lorem.txt
+
 
 #create file for encrpted version
 touch encrypted.txt
