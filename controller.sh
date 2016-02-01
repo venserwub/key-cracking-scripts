@@ -1,9 +1,13 @@
 #! /bin/bash
 
+ssh [user]@[server] 'javac Crypto.java && nohup java Crypto $RANDKEY lorem.txt encrypted.txt > foo.out 2> foo.err < /dev/null &'
 
-javac CipherExample.java
-#Need to adjust it to pull the key from params if we generate a random one
-java CipherExample $RANDKEY lorem.txt encrypted.txt
+ssh [user]@[server] 'javac Crypto.java && nohup java Crypto $RANDKEY lorem.txt encrypted.txt > foo.out 2> foo.err < /dev/null &'
+
+ssh [user]@[server] 'javac Crypto.java && nohup java Crypto $RANDKEY lorem.txt encrypted.txt > foo.out 2> foo.err < /dev/null &'
+
+ssh [user]@[server] 'javac Crypto.java && nohup java Crypto $RANDKEY lorem.txt encrypted.txt > foo.out 2> foo.err < /dev/null &'
+
 #gets lorem ipsum and encrypts then decrypts
 
 
