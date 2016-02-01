@@ -4,8 +4,8 @@
 #Use env var?
 #RANDKEY=...
 
-# encrypt lorem ipsum
-
+# create lorem ispum
+echo "Hello World" > lorem.txt
 
 # pass execution to controller
 ./controller.sh
