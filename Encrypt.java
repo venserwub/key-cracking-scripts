@@ -17,7 +17,8 @@ public class Encrypt {
 
 	public static void main(String[] args) {
 		try {
-			String key = "squirrel123"; // needs to be at least 8 characters for DES
+			String key = args[0];
+			//String key = "squirrel123"; // needs to be at least 8 characters for DES
 
 			FileInputStream fis = new FileInputStream("lorem.ptxt");
 			FileOutputStream fos = new FileOutputStream("lorem.ctxt");
