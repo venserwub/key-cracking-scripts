@@ -19,8 +19,8 @@ public class Encrypt {
 		try {
 			String key = "squirrel123"; // needs to be at least 8 characters for DES
 
-			FileInputStream fis = new FileInputStream("Lorem.ptxt");
-			FileOutputStream fos = new FileOutputStream("Lorem.ptxt");
+			FileInputStream fis = new FileInputStream("lorem.ptxt");
+			FileOutputStream fos = new FileOutputStream("lorem.ctxt");
 			encrypt(key, fis, fos);
 
 		} catch (Throwable e) {
